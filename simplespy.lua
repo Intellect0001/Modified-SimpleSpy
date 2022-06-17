@@ -43,15 +43,15 @@ local ColorBar_2 = Instance.new("Frame") -- breaks if trying to edit
 local CNKzJFyilr_2 = Instance.new("TextLabel")
 local smI7j8Ax0J_2 = Instance.new("TextButton")
 local BxKh7f4VET = Instance.new("Frame")
-local Simple = Instance.new("TextButton")
-local CloseButton = Instance.new("TextButton")
-local ImageLabel = Instance.new("ImageLabel")
-local MaximizeButton = Instance.new("TextButton")
-local ImageLabel_2 = Instance.new("ImageLabel")
-local MinimizeButton = Instance.new("TextButton")
-local ImageLabel_3 = Instance.new("ImageLabel")
-local ToolTip = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
+local KX7BU67ps6 = Instance.new("TextButton")
+local arZvFpKsWr = Instance.new("TextButton")
+local hTSRj9Ba1s = Instance.new("ImageLabel")
+local SJttRFGFAk = Instance.new("TextButton")
+local hTSRj9Ba1s_2 = Instance.new("ImageLabel")
+local B8T4gvyFx6 = Instance.new("TextButton")
+local hTSRj9Ba1s_3 = Instance.new("ImageLabel")
+local ReIscAXF6u = Instance.new("Frame")
+local yqOJuszwwz = Instance.new("TextLabel")
 
 --Properties:
 
@@ -204,95 +204,95 @@ BxKh7f4VET.BackgroundColor3 = Color3.fromRGB(37, 35, 38)
 BxKh7f4VET.BorderSizePixel = 0
 BxKh7f4VET.Size = UDim2.new(0, 450, 0, 19)
 
-Simple.Name = "lQs9PVa5lw"
-Simple.Parent = BxKh7f4VET
-Simple.BackgroundColor3 = Color3.new(1, 1, 1)
-Simple.AutoButtonColor = false
-Simple.BackgroundTransparency = 1
-Simple.Position = UDim2.new(0, 5, 0, 0)
-Simple.Size = UDim2.new(0, 57, 0, 18)
-Simple.Font = Enum.Font.SourceSansBold
-Simple.Text = "SimpleSpy Modified (by Intellect.#0001)"
-Simple.TextColor3 = Color3.new(1, 1, 1)
-Simple.TextSize = 14
-Simple.TextXAlignment = Enum.TextXAlignment.Left
+KX7BU67ps6.Name = "lQs9PVa5lw"
+KX7BU67ps6.Parent = BxKh7f4VET
+KX7BU67ps6.BackgroundColor3 = Color3.new(1, 1, 1)
+KX7BU67ps6.AutoButtonColor = false
+KX7BU67ps6.BackgroundTransparency = 1
+KX7BU67ps6.Position = UDim2.new(0, 5, 0, 0)
+KX7BU67ps6.Size = UDim2.new(0, 57, 0, 18)
+KX7BU67ps6.Font = Enum.Font.SourceSansBold
+KX7BU67ps6.Text = "SimpleSpy Modified (by Intellect.#0001)"
+KX7BU67ps6.TextColor3 = Color3.new(1, 1, 1)
+KX7BU67ps6.TextSize = 14
+KX7BU67ps6.TextXAlignment = Enum.TextXAlignment.Left
 
-CloseButton.Name = "CloseButton"
-CloseButton.Parent = BxKh7f4VET
-CloseButton.BackgroundColor3 = Color3.new(0.145098, 0.141176, 0.14902)
-CloseButton.BorderSizePixel = 0
-CloseButton.Position = UDim2.new(1, -19, 0, 0)
-CloseButton.Size = UDim2.new(0, 19, 0, 19)
-CloseButton.Font = Enum.Font.SourceSans
-CloseButton.Text = ""
-CloseButton.TextColor3 = Color3.new(0, 0, 0)
-CloseButton.TextSize = 14
+arZvFpKsWr.Name = "3pxu4gdeIL"
+arZvFpKsWr.Parent = BxKh7f4VET
+arZvFpKsWr.BackgroundColor3 = Color3.new(0.145098, 0.141176, 0.14902)
+arZvFpKsWr.BorderSizePixel = 0
+arZvFpKsWr.Position = UDim2.new(1, -19, 0, 0)
+arZvFpKsWr.Size = UDim2.new(0, 19, 0, 19)
+arZvFpKsWr.Font = Enum.Font.SourceSans
+arZvFpKsWr.Text = ""
+arZvFpKsWr.TextColor3 = Color3.new(0, 0, 0)
+arZvFpKsWr.TextSize = 14
 
-ImageLabel.Parent = CloseButton
-ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
-ImageLabel.BackgroundTransparency = 1
-ImageLabel.Position = UDim2.new(0, 5, 0, 5)
-ImageLabel.Size = UDim2.new(0, 9, 0, 9)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=5597086202"
+hTSRj9Ba1s.Parent = arZvFpKsWr
+hTSRj9Ba1s.BackgroundColor3 = Color3.new(1, 1, 1)
+hTSRj9Ba1s.BackgroundTransparency = 1
+hTSRj9Ba1s.Position = UDim2.new(0, 5, 0, 5)
+hTSRj9Ba1s.Size = UDim2.new(0, 9, 0, 9)
+hTSRj9Ba1s.Image = "http://www.roblox.com/asset/?id=5597086202"
 
-MaximizeButton.Name = "MaximizeButton"
-MaximizeButton.Parent = BxKh7f4VET
-MaximizeButton.BackgroundColor3 = Color3.new(0.145098, 0.141176, 0.14902)
-MaximizeButton.BorderSizePixel = 0
-MaximizeButton.Position = UDim2.new(1, -38, 0, 0)
-MaximizeButton.Size = UDim2.new(0, 19, 0, 19)
-MaximizeButton.Font = Enum.Font.SourceSans
-MaximizeButton.Text = ""
-MaximizeButton.TextColor3 = Color3.new(0, 0, 0)
-MaximizeButton.TextSize = 14
+SJttRFGFAk.Name = "Ant5I8KVU6"
+SJttRFGFAk.Parent = BxKh7f4VET
+SJttRFGFAk.BackgroundColor3 = Color3.new(0.145098, 0.141176, 0.14902)
+SJttRFGFAk.BorderSizePixel = 0
+SJttRFGFAk.Position = UDim2.new(1, -38, 0, 0)
+SJttRFGFAk.Size = UDim2.new(0, 19, 0, 19)
+SJttRFGFAk.Font = Enum.Font.SourceSans
+SJttRFGFAk.Text = ""
+SJttRFGFAk.TextColor3 = Color3.new(0, 0, 0)
+SJttRFGFAk.TextSize = 14
 
-ImageLabel_2.Parent = MaximizeButton
-ImageLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
-ImageLabel_2.BackgroundTransparency = 1
-ImageLabel_2.Position = UDim2.new(0, 5, 0, 5)
-ImageLabel_2.Size = UDim2.new(0, 9, 0, 9)
-ImageLabel_2.Image = "http://www.roblox.com/asset/?id=5597108117"
+hTSRj9Ba1s_2.Parent = SJttRFGFAk
+hTSRj9Ba1s_2.BackgroundColor3 = Color3.new(1, 1, 1)
+hTSRj9Ba1s_2.BackgroundTransparency = 1
+hTSRj9Ba1s_2.Position = UDim2.new(0, 5, 0, 5)
+hTSRj9Ba1s_2.Size = UDim2.new(0, 9, 0, 9)
+hTSRj9Ba1s_2.Image = "http://www.roblox.com/asset/?id=5597108117"
 
-MinimizeButton.Name = "MinimizeButton"
-MinimizeButton.Parent = BxKh7f4VET
-MinimizeButton.BackgroundColor3 = Color3.new(0.145098, 0.141176, 0.14902)
-MinimizeButton.BorderSizePixel = 0
-MinimizeButton.Position = UDim2.new(1, -57, 0, 0)
-MinimizeButton.Size = UDim2.new(0, 19, 0, 19)
-MinimizeButton.Font = Enum.Font.SourceSans
-MinimizeButton.Text = ""
-MinimizeButton.TextColor3 = Color3.new(0, 0, 0)
-MinimizeButton.TextSize = 14
+B8T4gvyFx6.Name = "RYBHIkh3Mj"
+B8T4gvyFx6.Parent = BxKh7f4VET
+B8T4gvyFx6.BackgroundColor3 = Color3.new(0.145098, 0.141176, 0.14902)
+B8T4gvyFx6.BorderSizePixel = 0
+B8T4gvyFx6.Position = UDim2.new(1, -57, 0, 0)
+B8T4gvyFx6.Size = UDim2.new(0, 19, 0, 19)
+B8T4gvyFx6.Font = Enum.Font.SourceSans
+B8T4gvyFx6.Text = ""
+B8T4gvyFx6.TextColor3 = Color3.new(0, 0, 0)
+B8T4gvyFx6.TextSize = 14
 
-ImageLabel_3.Parent = MinimizeButton
-ImageLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
-ImageLabel_3.BackgroundTransparency = 1
-ImageLabel_3.Position = UDim2.new(0, 5, 0, 5)
-ImageLabel_3.Size = UDim2.new(0, 9, 0, 9)
-ImageLabel_3.Image = "http://www.roblox.com/asset/?id=5597105827"
+hTSRj9Ba1s_3.Parent = B8T4gvyFx6
+hTSRj9Ba1s_3.BackgroundColor3 = Color3.new(1, 1, 1)
+hTSRj9Ba1s_3.BackgroundTransparency = 1
+hTSRj9Ba1s_3.Position = UDim2.new(0, 5, 0, 5)
+hTSRj9Ba1s_3.Size = UDim2.new(0, 9, 0, 9)
+hTSRj9Ba1s_3.Image = "http://www.roblox.com/asset/?id=5597105827"
 
-ToolTip.Name = "ToolTip"
-ToolTip.Parent = SRKsY0xZ9r
-ToolTip.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-ToolTip.BackgroundTransparency = 0.1
-ToolTip.BorderColor3 = Color3.new(1, 1, 1)
-ToolTip.Size = UDim2.new(0, 200, 0, 50)
-ToolTip.ZIndex = 3
-ToolTip.Visible = false
+ReIscAXF6u.Name = "yRRlsgbKBr"
+ReIscAXF6u.Parent = SRKsY0xZ9r
+ReIscAXF6u.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+ReIscAXF6u.BackgroundTransparency = 0.1
+ReIscAXF6u.BorderColor3 = Color3.new(1, 1, 1)
+ReIscAXF6u.Size = UDim2.new(0, 200, 0, 50)
+ReIscAXF6u.ZIndex = 3
+ReIscAXF6u.Visible = false
 
-TextLabel.Parent = ToolTip
-TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel.BackgroundTransparency = 1
-TextLabel.Position = UDim2.new(0, 2, 0, 2)
-TextLabel.Size = UDim2.new(0, 196, 0, 46)
-TextLabel.ZIndex = 3
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "This is some slightly longer text."
-TextLabel.TextColor3 = Color3.new(1, 1, 1)
-TextLabel.TextSize = 14
-TextLabel.TextWrapped = true
-TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+yqOJuszwwz.Parent = ReIscAXF6u
+yqOJuszwwz.BackgroundColor3 = Color3.new(1, 1, 1)
+yqOJuszwwz.BackgroundTransparency = 1
+yqOJuszwwz.Position = UDim2.new(0, 2, 0, 2)
+yqOJuszwwz.Size = UDim2.new(0, 196, 0, 46)
+yqOJuszwwz.ZIndex = 3
+yqOJuszwwz.Font = Enum.Font.SourceSans
+yqOJuszwwz.Text = "This is some slightly longer text."
+yqOJuszwwz.TextColor3 = Color3.new(1, 1, 1)
+yqOJuszwwz.TextSize = 14
+yqOJuszwwz.TextWrapped = true
+yqOJuszwwz.TextXAlignment = Enum.TextXAlignment.Left
+yqOJuszwwz.TextYAlignment = Enum.TextYAlignment.Top
 
 -------------------------------------------------------------------------------
 -- init
@@ -544,45 +544,45 @@ end
 --- Scales the ToolTip to fit containing text
 function scaleToolTip()
 	local size = TextService:GetTextSize(
-		TextLabel.Text,
-		TextLabel.TextSize,
-		TextLabel.Font,
+		yqOJuszwwz.Text,
+		yqOJuszwwz.TextSize,
+		yqOJuszwwz.Font,
 		Vector2.new(196, math.huge)
 	)
-	TextLabel.Size = UDim2.new(0, size.X, 0, size.Y)
-	ToolTip.Size = UDim2.new(0, size.X + 4, 0, size.Y + 4)
+	yqOJuszwwz.Size = UDim2.new(0, size.X, 0, size.Y)
+	ReIscAXF6u.Size = UDim2.new(0, size.X + 4, 0, size.Y + 4)
 end
 
 --- Executed when the toggle button (the SimpleSpy logo) is hovered over
 function onToggleButtonHover()
 	if not toggle then
-		TweenService:Create(Simple, TweenInfo.new(0.5), { TextColor3 = Color3.fromRGB(252, 51, 51) }):Play()
+		TweenService:Create(KX7BU67ps6, TweenInfo.new(0.5), { TextColor3 = Color3.fromRGB(252, 51, 51) }):Play()
 	else
-		TweenService:Create(Simple, TweenInfo.new(0.5), { TextColor3 = Color3.fromRGB(68, 206, 91) }):Play()
+		TweenService:Create(KX7BU67ps6, TweenInfo.new(0.5), { TextColor3 = Color3.fromRGB(68, 206, 91) }):Play()
 	end
 end
 
 --- Executed when the toggle button is unhovered over
 function onToggleButtonUnhover()
-	TweenService:Create(Simple, TweenInfo.new(0.5), { TextColor3 = Color3.fromRGB(255, 255, 255) }):Play()
+	TweenService:Create(KX7BU67ps6, TweenInfo.new(0.5), { TextColor3 = Color3.fromRGB(255, 255, 255) }):Play()
 end
 
 --- Executed when the X button is hovered over
 function onXButtonHover()
-	TweenService:Create(CloseButton, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(255, 60, 60) }):Play()
+	TweenService:Create(arZvFpKsWr, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(255, 60, 60) }):Play()
 end
 
 --- Executed when the X button is unhovered over
 function onXButtonUnhover()
-	TweenService:Create(CloseButton, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(37, 36, 38) }):Play()
+	TweenService:Create(arZvFpKsWr, TweenInfo.new(0.2), { BackgroundColor3 = Color3.fromRGB(37, 36, 38) }):Play()
 end
 
 --- Toggles the remote spy method (when button clicked)
 function onToggleButtonClick()
 	if toggle then
-		TweenService:Create(Simple, TweenInfo.new(0.5), { TextColor3 = Color3.fromRGB(252, 51, 51) }):Play()
+		TweenService:Create(KX7BU67ps6, TweenInfo.new(0.5), { TextColor3 = Color3.fromRGB(252, 51, 51) }):Play()
 	else
-		TweenService:Create(Simple, TweenInfo.new(0.5), { TextColor3 = Color3.fromRGB(68, 206, 91) }):Play()
+		TweenService:Create(KX7BU67ps6, TweenInfo.new(0.5), { TextColor3 = Color3.fromRGB(68, 206, 91) }):Play()
 	end
 	toggleSpyMethod()
 end
@@ -877,7 +877,7 @@ end
 function isInDragRange(p)
 	local relativeP = p - RzshveFnW4.AbsolutePosition
 	if
-		relativeP.X <= BxKh7f4VET.AbsoluteSize.X - CloseButton.AbsoluteSize.X * 3
+		relativeP.X <= BxKh7f4VET.AbsoluteSize.X - arZvFpKsWr.AbsoluteSize.X * 3
 		and relativeP.X >= 0
 		and relativeP.Y <= BxKh7f4VET.AbsoluteSize.Y
 		and relativeP.Y >= 0
@@ -1162,39 +1162,39 @@ end
 --- @param text string
 function makeToolTip(enable, text)
 	if enable then
-		if ToolTip.Visible then
-			ToolTip.Visible = false
+		if ReIscAXF6u.Visible then
+			ReIscAXF6u.Visible = false
 			RunService:UnbindFromRenderStep("ToolTip")
 		end
 		local first = true
 		RunService:BindToRenderStep("ToolTip", 1, function()
 			local topLeft = Vector2.new(Mouse.X + 20, Mouse.Y + 20)
-			local bottomRight = topLeft + ToolTip.AbsoluteSize
+			local bottomRight = topLeft + ReIscAXF6u.AbsoluteSize
 			if topLeft.X < 0 then
 				topLeft = Vector2.new(0, topLeft.Y)
 			elseif bottomRight.X > workspace.CurrentCamera.ViewportSize.X then
-				topLeft = Vector2.new(workspace.CurrentCamera.ViewportSize.X - ToolTip.AbsoluteSize.X, topLeft.Y)
+				topLeft = Vector2.new(workspace.CurrentCamera.ViewportSize.X - ReIscAXF6u.AbsoluteSize.X, topLeft.Y)
 			end
 			if topLeft.Y < 0 then
 				topLeft = Vector2.new(topLeft.X, 0)
 			elseif bottomRight.Y > workspace.CurrentCamera.ViewportSize.Y - 35 then
-				topLeft = Vector2.new(topLeft.X, workspace.CurrentCamera.ViewportSize.Y - ToolTip.AbsoluteSize.Y - 35)
+				topLeft = Vector2.new(topLeft.X, workspace.CurrentCamera.ViewportSize.Y - ReIscAXF6u.AbsoluteSize.Y - 35)
 			end
 			if topLeft.X <= Mouse.X and topLeft.Y <= Mouse.Y then
-				topLeft = Vector2.new(Mouse.X - ToolTip.AbsoluteSize.X - 2, Mouse.Y - ToolTip.AbsoluteSize.Y - 2)
+				topLeft = Vector2.new(Mouse.X - ReIscAXF6u.AbsoluteSize.X - 2, Mouse.Y - ReIscAXF6u.AbsoluteSize.Y - 2)
 			end
 			if first then
-				ToolTip.Position = UDim2.fromOffset(topLeft.X, topLeft.Y)
+				ReIscAXF6u.Position = UDim2.fromOffset(topLeft.X, topLeft.Y)
 				first = false
 			else
-				ToolTip:TweenPosition(UDim2.fromOffset(topLeft.X, topLeft.Y), "Out", "Linear", 0.1)
+				ReIscAXF6u:TweenPosition(UDim2.fromOffset(topLeft.X, topLeft.Y), "Out", "Linear", 0.1)
 			end
 		end)
-		TextLabel.Text = text
-		ToolTip.Visible = true
+		yqOJuszwwz.Text = text
+		ReIscAXF6u.Visible = true
 	else
-		if ToolTip.Visible then
-			ToolTip.Visible = false
+		if ReIscAXF6u.Visible then
+			ReIscAXF6u.Visible = false
 			RunService:UnbindFromRenderStep("ToolTip")
 		end
 	end
@@ -2269,9 +2269,9 @@ if not _G.SimpleSpyExecuted then
 			"rbxassetid://6065774948",
 			"rbxassetid://6065821086",
 			"rbxassetid://6065821596",
-			ImageLabel,
-			ImageLabel_2,
-			ImageLabel_3,
+			hTSRj9Ba1s,
+			hTSRj9Ba1s_2,
+			hTSRj9Ba1s_3,
 		})
 		-- if gethui then funcEnabled = false end
 		onToggleButtonClick()
@@ -2287,16 +2287,16 @@ if not _G.SimpleSpyExecuted then
 				end
 			end
 		end
-		TextLabel:GetPropertyChangedSignal("Text"):Connect(scaleToolTip)
+		yqOJuszwwz:GetPropertyChangedSignal("Text"):Connect(scaleToolTip)
 		-- TopBar.InputBegan:Connect(onBarInput)
-		MinimizeButton.MouseButton1Click:Connect(toggleMinimize)
-		MaximizeButton.MouseButton1Click:Connect(toggleSideTray)
-		Simple.MouseButton1Click:Connect(onToggleButtonClick)
-		CloseButton.MouseEnter:Connect(onXButtonHover)
-		CloseButton.MouseLeave:Connect(onXButtonUnhover)
-		Simple.MouseEnter:Connect(onToggleButtonHover)
-		Simple.MouseLeave:Connect(onToggleButtonUnhover)
-		CloseButton.MouseButton1Click:Connect(shutdown)
+		B8T4gvyFx6.MouseButton1Click:Connect(toggleMinimize)
+		SJttRFGFAk.MouseButton1Click:Connect(toggleSideTray)
+		KX7BU67ps6.MouseButton1Click:Connect(onToggleButtonClick)
+		arZvFpKsWr.MouseEnter:Connect(onXButtonHover)
+		arZvFpKsWr.MouseLeave:Connect(onXButtonUnhover)
+		KX7BU67ps6.MouseEnter:Connect(onToggleButtonHover)
+		KX7BU67ps6.MouseLeave:Connect(onToggleButtonUnhover)
+		arZvFpKsWr.MouseButton1Click:Connect(shutdown)
 		table.insert(connections, UserInputService.InputBegan:Connect(backgroundUserInput))
 		connectResize()
 		SRKsY0xZ9r.Enabled = true
@@ -2370,7 +2370,7 @@ newButton("Copy Code", function()
 	return "Click to copy code"
 end, function()
 	setclipboard(codebox:getString())
-	TextLabel.Text = "Copied successfully!"
+	yqOJuszwwz.Text = "Copied successfully!"
 end)
 
 --- Copies the source script (that fired the remote)
@@ -2379,7 +2379,7 @@ newButton("Copy Remote", function()
 end, function()
 	if selected then
 		setclipboard(v2s(selected.Remote.remote))
-		TextLabel.Text = "Copied!"
+		yqOJuszwwz.Text = "Copied!"
 	end
 end)
 
@@ -2388,14 +2388,14 @@ newButton("Run Code", function()
 	return "Click to execute code"
 end, function()
 	local orText = "Click to execute code"
-	TextLabel.Text = "Executing..."
+	yqOJuszwwz.Text = "Executing..."
 	local succeeded = pcall(function()
 		return loadstring(codebox:getString())()
 	end)
 	if succeeded then
-		TextLabel.Text = "Executed successfully!"
+		yqOJuszwwz.Text = "Executed successfully!"
 	else
-		TextLabel.Text = "Execution error!"
+		yqOJuszwwz.Text = "Execution error!"
 	end
 end)
 
@@ -2405,7 +2405,7 @@ newButton("Get Script", function()
 end, function()
 	if selected then
 		setclipboard(SimpleSpy:ValueToString(selected.Source))
-		TextLabel.Text = "Done!"
+		yqOJuszwwz.Text = "Done!"
 	end
 end)
 
@@ -2419,7 +2419,7 @@ end, function()
 				"-- Calling function info\n-- Generated by the SimpleSpy serializer\n\n" .. tostring(selected.Function)
 			)
 		end
-		TextLabel.Text = "Done! Function info generated by the SimpleSpy Serializer."
+		yqOJuszwwz.Text = "Done! Function info generated by the SimpleSpy Serializer."
 	end
 end)
 
@@ -2427,7 +2427,7 @@ end)
 newButton("Clr Logs", function()
 	return "Click to clear logs"
 end, function()
-	TextLabel.Text = "Clearing..."
+	yqOJuszwwz.Text = "Clearing..."
 	logs = {}
 	for _, v in pairs(QiyVbDCBiK:GetChildren()) do
 		if not v:IsA("UIListLayout") then
@@ -2436,7 +2436,7 @@ end, function()
 	end
 	codebox:setRaw("")
 	selected = nil
-	TextLabel.Text = "Logs cleared!"
+	yqOJuszwwz.Text = "Logs cleared!"
 end)
 
 --- Excludes the selected.Log Remote from the RemoteSpy
@@ -2445,7 +2445,7 @@ newButton("Exclude (i)", function()
 end, function()
 	if selected then
 		blacklist[selected.Remote.remote] = true
-		TextLabel.Text = "Excluded!"
+		yqOJuszwwz.Text = "Excluded!"
 	end
 end)
 
@@ -2455,7 +2455,7 @@ newButton("Exclude (n)", function()
 end, function()
 	if selected then
 		blacklist[selected.Name] = true
-		TextLabel.Text = "Excluded!"
+		yqOJuszwwz.Text = "Excluded!"
 	end
 end)
 
@@ -2464,7 +2464,7 @@ newButton("Clr Blacklist", function()
 	return "Click to clear the blacklist.\nExcluding a remote makes SimpleSpy ignore it, but it will continue to be usable."
 end, function()
 	blacklist = {}
-	TextLabel.Text = "Blacklist cleared!"
+	yqOJuszwwz.Text = "Blacklist cleared!"
 end)
 
 --- Prevents the selected.Log Remote from firing the server (still logged)
@@ -2474,9 +2474,9 @@ end, function()
 	if selected then
 		if selected.Remote.remote then
 			blocklist[selected.Remote.remote] = true
-			TextLabel.Text = "Excluded!"
+			yqOJuszwwz.Text = "Excluded!"
 		else
-			TextLabel.Text = "Error! Instance may no longer exist, try using Block (n)."
+			yqOJuszwwz.Text = "Error! Instance may no longer exist, try using Block (n)."
 		end
 	end
 end)
@@ -2487,7 +2487,7 @@ newButton("Block (n)", function()
 end, function()
 	if selected then
 		blocklist[selected.Name] = true
-		TextLabel.Text = "Excluded!"
+		yqOJuszwwz.Text = "Excluded!"
 	end
 end)
 
@@ -2496,7 +2496,7 @@ newButton("Clr Blocklist", function()
 	return "Click to stop blocking remotes.\nBlocking a remote won't remove it from SimpleSpy logs, but it will not continue to fire the server."
 end, function()
 	blocklist = {}
-	TextLabel.Text = "Blocklist cleared!"
+	yqOJuszwwz.Text = "Blocklist cleared!"
 end)
 
 --- Attempts to decompile the source script
@@ -2506,9 +2506,9 @@ end, function()
 	if selected then
 		if selected.Source then
 			codebox:setRaw(decompile(selected.Source))
-			TextLabel.Text = "Done!"
+			yqOJuszwwz.Text = "Done!"
 		else
-			TextLabel.Text = "Source not found!"
+			yqOJuszwwz.Text = "Source not found!"
 		end
 	end
 end)
@@ -2520,7 +2520,7 @@ newButton("Disable Info", function()
 	)
 end, function()
 	funcEnabled = not funcEnabled
-	TextLabel.Text = string.format(
+	yqOJuszwwz.Text = string.format(
 		"[%s] Toggle function info (because it can cause lag in some games)",
 		funcEnabled and "ENABLED" or "DISABLED"
 	)
@@ -2533,7 +2533,7 @@ newButton("Autoblock", function()
 	)
 end, function()
 	autoblock = not autoblock
-	TextLabel.Text = string.format(
+	yqOJuszwwz.Text = string.format(
 		"[%s] [BETA] Intelligently detects and excludes spammy remote calls from logs",
 		autoblock and "ENABLED" or "DISABLED"
 	)
@@ -2548,7 +2548,7 @@ newButton("CallingScript", function()
 	)
 end, function()
 	useGetCallingScript = not useGetCallingScript
-	TextLabel.Text = string.format(
+	yqOJuszwwz.Text = string.format(
 		"[%s] [UNSAFE] Uses 'getcallingscript' to get calling script for Decompile and GetScript. Much more reliable, but opens up SimpleSpy to detection and/or instability.",
 		useGetCallingScript and "ENABLED" or "DISABLED"
 	)
@@ -2561,7 +2561,7 @@ newButton("KeyToString", function()
 	)
 end, function()
 	keyToString = not keyToString
-	TextLabel.Text = string.format(
+	yqOJuszwwz.Text = string.format(
 		"[%s] [BETA] Uses an experimental new function to replicate Roblox's behavior when a non-primitive type is used as a key in a table. Still in development and may not properly reflect tostringed (empty) userdata.",
 		keyToString and "ENABLED" or "DISABLED"
 	)
@@ -2574,7 +2574,7 @@ newButton("ToggleReturnValues", function()
 	)
 end, function()
 	recordReturnValues = not recordReturnValues
-	TextLabel.Text = string.format(
+	yqOJuszwwz.Text = string.format(
 		"[%s] [EXPERIMENTAL] Enables recording of return values for 'GetReturnValue'\n\nUse this method at your own risk, as it could be detectable.",
 		recordReturnValues and "ENABLED" or "DISABLED"
 	)
