@@ -34,12 +34,12 @@ local bmC9bQhv7M = Instance.new("Frame")
 local ColorBar = Instance.new("Frame") -- breaks if trying to edit 
 local CNKzJFyilr = Instance.new("TextLabel")
 local smI7j8Ax0J = Instance.new("TextButton")
-local RightPanel = Instance.new("Frame")
-local CodeBox = Instance.new("Frame")
+local EhfF0Ej8Yj = Instance.new("Frame")
+local UfnCtByVMn = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local UIGridLayout = Instance.new("UIGridLayout")
 local FunctionTemplate = Instance.new("Frame")
-local ColorBar_2 = Instance.new("Frame")
+local ColorBar_2 = Instance.new("Frame") -- breaks if trying to edit
 local Text_2 = Instance.new("TextLabel")
 local Button_2 = Instance.new("TextButton")
 local TopBar = Instance.new("Frame")
@@ -128,20 +128,20 @@ smI7j8Ax0J.Text = ""
 smI7j8Ax0J.TextColor3 = Color3.new(0, 0, 0)
 smI7j8Ax0J.TextSize = 14
 
-RightPanel.Name = "RightPanel"
-RightPanel.Parent = RzshveFnW4
-RightPanel.BackgroundColor3 = Color3.fromRGB(37, 36, 38)
-RightPanel.BorderSizePixel = 0
-RightPanel.Position = UDim2.new(0, 131, 0, 19)
-RightPanel.Size = UDim2.new(0, 319, 0, 249)
+EhfF0Ej8Yj.Name = "qAYQknneGe"
+EhfF0Ej8Yj.Parent = RzshveFnW4
+EhfF0Ej8Yj.BackgroundColor3 = Color3.fromRGB(37, 36, 38)
+EhfF0Ej8Yj.BorderSizePixel = 0
+EhfF0Ej8Yj.Position = UDim2.new(0, 131, 0, 19)
+EhfF0Ej8Yj.Size = UDim2.new(0, 319, 0, 249)
 
-CodeBox.Name = "CodeBox"
-CodeBox.Parent = RightPanel
-CodeBox.BackgroundColor3 = Color3.new(0.0823529, 0.0745098, 0.0784314)
-CodeBox.BorderSizePixel = 0
-CodeBox.Size = UDim2.new(0, 319, 0, 119)
+UfnCtByVMn.Name = "zZtq20Qo6l"
+UfnCtByVMn.Parent = EhfF0Ej8Yj
+UfnCtByVMn.BackgroundColor3 = Color3.new(0.0823529, 0.0745098, 0.0784314)
+UfnCtByVMn.BorderSizePixel = 0
+UfnCtByVMn.Size = UDim2.new(0, 319, 0, 119)
 
-ScrollingFrame.Parent = RightPanel
+ScrollingFrame.Parent = EhfF0Ej8Yj
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.new(1, 1, 1)
 ScrollingFrame.BackgroundTransparency = 1
@@ -786,16 +786,16 @@ function toggleSideTray(override)
 	sideClosing = true
 	sideClosed = not sideClosed
 	if sideClosed then
-		rightFadeIn = fadeOut(RightPanel:GetDescendants())
+		rightFadeIn = fadeOut(EhfF0Ej8Yj:GetDescendants())
 		wait(0.5)
 		minimizeSize(0.5)
 		wait(0.5)
-		RightPanel.Visible = false
+		EhfF0Ej8Yj.Visible = false
 	else
 		if closed then
 			toggleMinimize(true)
 		end
-		RightPanel.Visible = true
+		EhfF0Ej8Yj.Visible = true
 		maximizeSize(0.5)
 		wait(0.5)
 		if rightFadeIn then
@@ -811,8 +811,8 @@ function toggleMaximize()
 	if not sideClosed and not maximized then
 		maximized = true
 		local disable = Instance.new("TextButton")
-		local prevSize = UDim2.new(0, CodeBox.AbsoluteSize.X, 0, CodeBox.AbsoluteSize.Y)
-		local prevPos = UDim2.new(0, CodeBox.AbsolutePosition.X, 0, CodeBox.AbsolutePosition.Y)
+		local prevSize = UDim2.new(0, UfnCtByVMn.AbsoluteSize.X, 0, UfnCtByVMn.AbsoluteSize.Y)
+		local prevPos = UDim2.new(0, UfnCtByVMn.AbsolutePosition.X, 0, UfnCtByVMn.AbsolutePosition.Y)
 		disable.Size = UDim2.new(1, 0, 1, 0)
 		disable.BackgroundColor3 = Color3.new()
 		disable.BorderSizePixel = 0
@@ -820,12 +820,12 @@ function toggleMaximize()
 		disable.ZIndex = 3
 		disable.BackgroundTransparency = 1
 		disable.AutoButtonColor = false
-		CodeBox.ZIndex = 4
-		CodeBox.Position = prevPos
-		CodeBox.Size = prevSize
+		UfnCtByVMn.ZIndex = 4
+		UfnCtByVMn.Position = prevPos
+		UfnCtByVMn.Size = prevSize
 		TweenService
 			:Create(
-				CodeBox,
+				UfnCtByVMn,
 				TweenInfo.new(0.5),
 				{ Size = UDim2.new(0.5, 0, 0.5, 0), Position = UDim2.new(0.25, 0, 0.25, 0) }
 			)
@@ -833,21 +833,21 @@ function toggleMaximize()
 		TweenService:Create(disable, TweenInfo.new(0.5), { BackgroundTransparency = 0.5 }):Play()
 		disable.MouseButton1Click:Connect(function()
 			if
-				UserInputService:GetMouseLocation().Y + 36 >= CodeBox.AbsolutePosition.Y
-				and UserInputService:GetMouseLocation().Y + 36 <= CodeBox.AbsolutePosition.Y + CodeBox.AbsoluteSize.Y
-				and UserInputService:GetMouseLocation().X >= CodeBox.AbsolutePosition.X
-				and UserInputService:GetMouseLocation().X <= CodeBox.AbsolutePosition.X + CodeBox.AbsoluteSize.X
+				UserInputService:GetMouseLocation().Y + 36 >= UfnCtByVMn.AbsolutePosition.Y
+				and UserInputService:GetMouseLocation().Y + 36 <= UfnCtByVMn.AbsolutePosition.Y + UfnCtByVMn.AbsoluteSize.Y
+				and UserInputService:GetMouseLocation().X >= UfnCtByVMn.AbsolutePosition.X
+				and UserInputService:GetMouseLocation().X <= UfnCtByVMn.AbsolutePosition.X + UfnCtByVMn.AbsoluteSize.X
 			then
 				return
 			end
-			TweenService:Create(CodeBox, TweenInfo.new(0.5), { Size = prevSize, Position = prevPos }):Play()
+			TweenService:Create(UfnCtByVMn, TweenInfo.new(0.5), { Size = prevSize, Position = prevPos }):Play()
 			TweenService:Create(disable, TweenInfo.new(0.5), { BackgroundTransparency = 1 }):Play()
 			maximized = false
 			wait(0.5)
 			disable:Destroy()
-			CodeBox.Size = UDim2.new(1, 0, 0.5, 0)
-			CodeBox.Position = UDim2.new(0, 0, 0, 0)
-			CodeBox.ZIndex = 0
+			UfnCtByVMn.Size = UDim2.new(1, 0, 0.5, 0)
+			UfnCtByVMn.Position = UDim2.new(0, 0, 0, 0)
+			UfnCtByVMn.ZIndex = 0
 		end)
 	end
 end
@@ -959,7 +959,7 @@ function maximizeSize(speed)
 		)
 		:Play()
 	TweenService
-		:Create(RightPanel, TweenInfo.new(speed), {
+		:Create(EhfF0Ej8Yj, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(
 				RzshveFnW4.AbsoluteSize.X - MvHiwxqHWq.AbsoluteSize.X,
 				RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y
@@ -980,7 +980,7 @@ function maximizeSize(speed)
 		})
 		:Play()
 	TweenService
-		:Create(CodeBox, TweenInfo.new(speed), {
+		:Create(UfnCtByVMn, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(
 				RzshveFnW4.AbsoluteSize.X - MvHiwxqHWq.AbsoluteSize.X,
 				RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y
@@ -1010,7 +1010,7 @@ function minimizeSize(speed)
 		:Play()
 	TweenService
 		:Create(
-			RightPanel,
+			EhfF0Ej8Yj,
 			TweenInfo.new(speed),
 			{ Size = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
 		)
@@ -1030,7 +1030,7 @@ function minimizeSize(speed)
 		:Play()
 	TweenService
 		:Create(
-			CodeBox,
+			UfnCtByVMn,
 			TweenInfo.new(speed),
 			{ Size = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y) }
 		)
@@ -2277,7 +2277,7 @@ if not _G.SimpleSpyExecuted then
 		onToggleButtonClick()
 		bmC9bQhv7M.Parent = nil
 		FunctionTemplate.Parent = nil
-		codebox = Highlight.new(CodeBox)
+		codebox = Highlight.new(UfnCtByVMn)
 		codebox:setRaw("")
 		getgenv().SimpleSpy = SimpleSpy
 		getgenv().getNil = function(name, class)
