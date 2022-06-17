@@ -27,9 +27,9 @@ local Highlight =
 
 local SRKsY0xZ9r = Instance.new("ScreenGui")
 local RzshveFnW4 = Instance.new("Frame")
-local LeftPanel = Instance.new("Frame")
-local LogList = Instance.new("ScrollingFrame")
-local UIListLayout = Instance.new("UIListLayout")
+local MvHiwxqHWq = Instance.new("Frame")
+local QiyVbDCBiK = Instance.new("ScrollingFrame")
+local AWfYBaIfet = Instance.new("UIListLayout")
 local RemoteTemplate = Instance.new("Frame")
 local ColorBar = Instance.new("Frame")
 local Text = Instance.new("TextLabel")
@@ -65,30 +65,30 @@ RzshveFnW4.BackgroundTransparency = 1
 RzshveFnW4.Position = UDim2.new(0, 500, 0, 200)
 RzshveFnW4.Size = UDim2.new(0, 450, 0, 268)
 
-LeftPanel.Name = "LeftPanel"
-LeftPanel.Parent = RzshveFnW4
-LeftPanel.BackgroundColor3 = Color3.fromRGB(53, 52, 55)
-LeftPanel.BorderSizePixel = 0
-LeftPanel.Position = UDim2.new(0, 0, 0, 19)
-LeftPanel.Size = UDim2.new(0, 131, 0, 249)
+MvHiwxqHWq.Name = "8iciYyo01i"
+MvHiwxqHWq.Parent = RzshveFnW4
+MvHiwxqHWq.BackgroundColor3 = Color3.fromRGB(53, 52, 55)
+MvHiwxqHWq.BorderSizePixel = 0
+MvHiwxqHWq.Position = UDim2.new(0, 0, 0, 19)
+MvHiwxqHWq.Size = UDim2.new(0, 131, 0, 249)
 
-LogList.Name = "LogList"
-LogList.Parent = LeftPanel
-LogList.Active = true
-LogList.BackgroundColor3 = Color3.new(1, 1, 1)
-LogList.BackgroundTransparency = 1
-LogList.BorderSizePixel = 0
-LogList.Position = UDim2.new(0, 0, 0, 9)
-LogList.Size = UDim2.new(0, 131, 0, 232)
-LogList.CanvasSize = UDim2.new(0, 0, 0, 0)
-LogList.ScrollBarThickness = 4
+QiyVbDCBiK.Name = "AWfYBaIfet"
+QiyVbDCBiK.Parent = MvHiwxqHWq
+QiyVbDCBiK.Active = true
+QiyVbDCBiK.BackgroundColor3 = Color3.new(1, 1, 1)
+QiyVbDCBiK.BackgroundTransparency = 1
+QiyVbDCBiK.BorderSizePixel = 0
+QiyVbDCBiK.Position = UDim2.new(0, 0, 0, 9)
+QiyVbDCBiK.Size = UDim2.new(0, 131, 0, 232)
+QiyVbDCBiK.CanvasSize = UDim2.new(0, 0, 0, 0)
+QiyVbDCBiK.ScrollBarThickness = 4
 
-UIListLayout.Parent = LogList
-UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+AWfYBaIfet.Parent = QiyVbDCBiK
+AWfYBaIfet.HorizontalAlignment = Enum.HorizontalAlignment.Center
+AWfYBaIfet.SortOrder = Enum.SortOrder.LayoutOrder
 
 RemoteTemplate.Name = "RemoteTemplate"
-RemoteTemplate.Parent = LogList
+RemoteTemplate.Parent = QiyVbDCBiK
 RemoteTemplate.BackgroundColor3 = Color3.new(1, 1, 1)
 RemoteTemplate.BackgroundTransparency = 1
 RemoteTemplate.Size = UDim2.new(0, 117, 0, 27)
@@ -761,13 +761,13 @@ function toggleMinimize(override)
 		if not sideClosed then
 			toggleSideTray(true)
 		end
-		LeftPanel.Visible = true
-		TweenService:Create(LeftPanel, TweenInfo.new(0.5), { Size = UDim2.new(0, 131, 0, 0) }):Play()
+		MvHiwxqHWq.Visible = true
+		TweenService:Create(MvHiwxqHWq, TweenInfo.new(0.5), { Size = UDim2.new(0, 131, 0, 0) }):Play()
 		wait(0.5)
-		remotesFadeIn = fadeOut(LeftPanel:GetDescendants())
+		remotesFadeIn = fadeOut(MvHiwxqHWq:GetDescendants())
 		wait(0.5)
 	else
-		TweenService:Create(LeftPanel, TweenInfo.new(0.5), { Size = UDim2.new(0, 131, 0, 249) }):Play()
+		TweenService:Create(MvHiwxqHWq, TweenInfo.new(0.5), { Size = UDim2.new(0, 131, 0, 249) }):Play()
 		wait(0.5)
 		if remotesFadeIn then
 			remotesFadeIn()
@@ -953,15 +953,15 @@ function maximizeSize(speed)
 	end
 	TweenService
 		:Create(
-			LeftPanel,
+			MvHiwxqHWq,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(LeftPanel.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(MvHiwxqHWq.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
 		:Create(RightPanel, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(
-				RzshveFnW4.AbsoluteSize.X - LeftPanel.AbsoluteSize.X,
+				RzshveFnW4.AbsoluteSize.X - MvHiwxqHWq.AbsoluteSize.X,
 				RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y
 			),
 		})
@@ -975,23 +975,23 @@ function maximizeSize(speed)
 		:Play()
 	TweenService
 		:Create(ScrollingFrame, TweenInfo.new(speed), {
-			Size = UDim2.fromOffset(RzshveFnW4.AbsoluteSize.X - LeftPanel.AbsoluteSize.X, 110),
+			Size = UDim2.fromOffset(RzshveFnW4.AbsoluteSize.X - MvHiwxqHWq.AbsoluteSize.X, 110),
 			Position = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y),
 		})
 		:Play()
 	TweenService
 		:Create(CodeBox, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(
-				RzshveFnW4.AbsoluteSize.X - LeftPanel.AbsoluteSize.X,
+				RzshveFnW4.AbsoluteSize.X - MvHiwxqHWq.AbsoluteSize.X,
 				RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y
 			),
 		})
 		:Play()
 	TweenService
 		:Create(
-			LogList,
+			QiyVbDCBiK,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(LogList.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y - 18) }
+			{ Size = UDim2.fromOffset(QiyVbDCBiK.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y - 18) }
 		)
 		:Play()
 end
@@ -1003,9 +1003,9 @@ function minimizeSize(speed)
 	end
 	TweenService
 		:Create(
-			LeftPanel,
+			MvHiwxqHWq,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(LeftPanel.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(MvHiwxqHWq.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
@@ -1019,7 +1019,7 @@ function minimizeSize(speed)
 		:Create(
 			TopBar,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(LeftPanel.AbsoluteSize.X, TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(MvHiwxqHWq.AbsoluteSize.X, TopBar.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
@@ -1037,9 +1037,9 @@ function minimizeSize(speed)
 		:Play()
 	TweenService
 		:Create(
-			LogList,
+			QiyVbDCBiK,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(LogList.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y - 18) }
+			{ Size = UDim2.fromOffset(QiyVbDCBiK.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y - 18) }
 		)
 		:Play()
 end
@@ -1154,7 +1154,7 @@ end
 
 --- Updates the canvas size to fit the amount of current remotes
 function updateRemoteCanvas()
-	LogList.CanvasSize = UDim2.fromOffset(UIListLayout.AbsoluteContentSize.X, UIListLayout.AbsoluteContentSize.Y)
+	QiyVbDCBiK.CanvasSize = UDim2.fromOffset(AWfYBaIfet.AbsoluteContentSize.X, AWfYBaIfet.AbsoluteContentSize.Y)
 end
 
 --- Allows for toggling of the tooltip and easy setting of le description
@@ -1265,7 +1265,7 @@ function newRemote(type, name, args, remote, function_info, blocked, src, return
 	end
 	remoteFrame.LayoutOrder = layoutOrderNum
 	layoutOrderNum = layoutOrderNum - 1
-	remoteFrame.Parent = LogList
+	remoteFrame.Parent = QiyVbDCBiK
 	table.insert(remoteLogs, 1, { connect, remoteFrame })
 	clean()
 	updateRemoteCanvas()
@@ -2429,7 +2429,7 @@ newButton("Clr Logs", function()
 end, function()
 	TextLabel.Text = "Clearing..."
 	logs = {}
-	for _, v in pairs(LogList:GetChildren()) do
+	for _, v in pairs(QiyVbDCBiK:GetChildren()) do
 		if not v:IsA("UIListLayout") then
 			v:Destroy()
 		end
