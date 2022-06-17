@@ -30,9 +30,9 @@ local RzshveFnW4 = Instance.new("Frame")
 local MvHiwxqHWq = Instance.new("Frame")
 local QiyVbDCBiK = Instance.new("ScrollingFrame")
 local AWfYBaIfet = Instance.new("UIListLayout")
-local RemoteTemplate = Instance.new("Frame")
+local bmC9bQhv7M = Instance.new("Frame")
 local ColorBar = Instance.new("Frame")
-local Text = Instance.new("TextLabel")
+local CNKzJFyilr = Instance.new("TextLabel")
 local Button = Instance.new("TextButton")
 local RightPanel = Instance.new("Frame")
 local CodeBox = Instance.new("Frame")
@@ -87,36 +87,36 @@ AWfYBaIfet.Parent = QiyVbDCBiK
 AWfYBaIfet.HorizontalAlignment = Enum.HorizontalAlignment.Center
 AWfYBaIfet.SortOrder = Enum.SortOrder.LayoutOrder
 
-RemoteTemplate.Name = "RemoteTemplate"
-RemoteTemplate.Parent = QiyVbDCBiK
-RemoteTemplate.BackgroundColor3 = Color3.new(1, 1, 1)
-RemoteTemplate.BackgroundTransparency = 1
-RemoteTemplate.Size = UDim2.new(0, 117, 0, 27)
+bmC9bQhv7M.Name = "ApeaBfgDtJ"
+bmC9bQhv7M.Parent = QiyVbDCBiK
+bmC9bQhv7M.BackgroundColor3 = Color3.new(1, 1, 1)
+bmC9bQhv7M.BackgroundTransparency = 1
+bmC9bQhv7M.Size = UDim2.new(0, 117, 0, 27)
 
 ColorBar.Name = "ColorBar"
-ColorBar.Parent = RemoteTemplate
+ColorBar.Parent = bmC9bQhv7M
 ColorBar.BackgroundColor3 = Color3.fromRGB(255, 242, 0)
 ColorBar.BorderSizePixel = 0
 ColorBar.Position = UDim2.new(0, 0, 0, 1)
 ColorBar.Size = UDim2.new(0, 7, 0, 18)
 ColorBar.ZIndex = 2
 
-Text.Name = "Text"
-Text.Parent = RemoteTemplate
-Text.BackgroundColor3 = Color3.new(1, 1, 1)
-Text.BackgroundTransparency = 1
-Text.Position = UDim2.new(0, 12, 0, 1)
-Text.Size = UDim2.new(0, 105, 0, 18)
-Text.ZIndex = 2
-Text.Font = Enum.Font.SourceSans
-Text.Text = "TEXT"
-Text.TextColor3 = Color3.new(1, 1, 1)
-Text.TextSize = 14
-Text.TextXAlignment = Enum.TextXAlignment.Left
-Text.TextWrapped = true
+CNKzJFyilr.Name = "Text"
+CNKzJFyilr.Parent = bmC9bQhv7M
+CNKzJFyilr.BackgroundColor3 = Color3.new(1, 1, 1)
+CNKzJFyilr.BackgroundTransparency = 1
+CNKzJFyilr.Position = UDim2.new(0, 12, 0, 1)
+CNKzJFyilr.Size = UDim2.new(0, 105, 0, 18)
+CNKzJFyilr.ZIndex = 2
+CNKzJFyilr.Font = Enum.Font.SourceSans
+CNKzJFyilr.Text = "TEXT"
+CNKzJFyilr.TextColor3 = Color3.new(1, 1, 1)
+CNKzJFyilr.TextSize = 14
+CNKzJFyilr.TextXAlignment = Enum.TextXAlignment.Left
+CNKzJFyilr.TextWrapped = true
 
 Button.Name = "Button"
-Button.Parent = RemoteTemplate
+Button.Parent = bmC9bQhv7M
 Button.BackgroundColor3 = Color3.new(0, 0, 0)
 Button.BackgroundTransparency = 0.75
 Button.BorderColor3 = Color3.new(1, 1, 1)
@@ -1231,7 +1231,7 @@ end
 --- @param function_info string
 --- @param blocked any
 function newRemote(type, name, args, remote, function_info, blocked, src, returnValue)
-	local remoteFrame = RemoteTemplate:Clone()
+	local remoteFrame = bmC9bQhv7M:Clone()
 	remoteFrame.Text.Text = string.sub(name, 1, 50)
 	remoteFrame.ColorBar.BackgroundColor3 = type == "event" and Color3.new(255, 242, 0) or Color3.fromRGB(99, 86, 245)
 	local id = Instance.new("IntValue")
@@ -2275,7 +2275,7 @@ if not _G.SimpleSpyExecuted then
 		})
 		-- if gethui then funcEnabled = false end
 		onToggleButtonClick()
-		RemoteTemplate.Parent = nil
+		bmC9bQhv7M.Parent = nil
 		FunctionTemplate.Parent = nil
 		codebox = Highlight.new(CodeBox)
 		codebox:setRaw("")
