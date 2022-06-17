@@ -40,9 +40,9 @@ local biPTz2neKL = Instance.new("ScrollingFrame")
 local vvFSVfIdjt = Instance.new("UIGridLayout")
 local Mp3ZSXZrWU = Instance.new("Frame")
 local ColorBar_2 = Instance.new("Frame") -- breaks if trying to edit
-local Text_2 = Instance.new("TextLabel")
-local Button_2 = Instance.new("TextButton")
-local TopBar = Instance.new("Frame")
+local CNKzJFyilr_2 = Instance.new("TextLabel")
+local smI7j8Ax0J_2 = Instance.new("TextButton")
+local BxKh7f4VET = Instance.new("Frame")
 local Simple = Instance.new("TextButton")
 local CloseButton = Instance.new("TextButton")
 local ImageLabel = Instance.new("ImageLabel")
@@ -170,42 +170,42 @@ ColorBar_2.Position = UDim2.new(0, 7, 0, 10)
 ColorBar_2.Size = UDim2.new(0, 7, 0, 18)
 ColorBar_2.ZIndex = 3
 
-Text_2.Name = "Text"
-Text_2.Parent = Mp3ZSXZrWU
-Text_2.BackgroundColor3 = Color3.new(1, 1, 1)
-Text_2.BackgroundTransparency = 1
-Text_2.Position = UDim2.new(0, 19, 0, 10)
-Text_2.Size = UDim2.new(0, 69, 0, 18)
-Text_2.ZIndex = 2
-Text_2.Font = Enum.Font.SourceSans
-Text_2.Text = "TEXT"
-Text_2.TextColor3 = Color3.new(1, 1, 1)
-Text_2.TextSize = 14
-Text_2.TextStrokeColor3 = Color3.new(0.145098, 0.141176, 0.14902)
-Text_2.TextXAlignment = Enum.TextXAlignment.Left
-Text_2.TextWrapped = true
+CNKzJFyilr_2.Name = "Text"
+CNKzJFyilr_2.Parent = Mp3ZSXZrWU
+CNKzJFyilr_2.BackgroundColor3 = Color3.new(1, 1, 1)
+CNKzJFyilr_2.BackgroundTransparency = 1
+CNKzJFyilr_2.Position = UDim2.new(0, 19, 0, 10)
+CNKzJFyilr_2.Size = UDim2.new(0, 69, 0, 18)
+CNKzJFyilr_2.ZIndex = 2
+CNKzJFyilr_2.Font = Enum.Font.SourceSans
+CNKzJFyilr_2.Text = "TEXT"
+CNKzJFyilr_2.TextColor3 = Color3.new(1, 1, 1)
+CNKzJFyilr_2.TextSize = 14
+CNKzJFyilr_2.TextStrokeColor3 = Color3.new(0.145098, 0.141176, 0.14902)
+CNKzJFyilr_2.TextXAlignment = Enum.TextXAlignment.Left
+CNKzJFyilr_2.TextWrapped = true
 
-Button_2.Name = "Button"
-Button_2.Parent = Mp3ZSXZrWU
-Button_2.BackgroundColor3 = Color3.new(0, 0, 0)
-Button_2.BackgroundTransparency = 0.69999998807907
-Button_2.BorderColor3 = Color3.new(1, 1, 1)
-Button_2.Position = UDim2.new(0, 7, 0, 10)
-Button_2.Size = UDim2.new(0, 80, 0, 18)
-Button_2.AutoButtonColor = false
-Button_2.Font = Enum.Font.SourceSans
-Button_2.Text = ""
-Button_2.TextColor3 = Color3.new(0, 0, 0)
-Button_2.TextSize = 14
+smI7j8Ax0J_2.Name = "Button"
+smI7j8Ax0J_2.Parent = Mp3ZSXZrWU
+smI7j8Ax0J_2.BackgroundColor3 = Color3.new(0, 0, 0)
+smI7j8Ax0J_2.BackgroundTransparency = 0.69999998807907
+smI7j8Ax0J_2.BorderColor3 = Color3.new(1, 1, 1)
+smI7j8Ax0J_2.Position = UDim2.new(0, 7, 0, 10)
+smI7j8Ax0J_2.Size = UDim2.new(0, 80, 0, 18)
+smI7j8Ax0J_2.AutoButtonColor = false
+smI7j8Ax0J_2.Font = Enum.Font.SourceSans
+smI7j8Ax0J_2.Text = ""
+smI7j8Ax0J_2.TextColor3 = Color3.new(0, 0, 0)
+smI7j8Ax0J_2.TextSize = 14
 
-TopBar.Name = "TopBar"
-TopBar.Parent = RzshveFnW4
-TopBar.BackgroundColor3 = Color3.fromRGB(37, 35, 38)
-TopBar.BorderSizePixel = 0
-TopBar.Size = UDim2.new(0, 450, 0, 19)
+BxKh7f4VET.Name = "IMojF5MPZE"
+BxKh7f4VET.Parent = RzshveFnW4
+BxKh7f4VET.BackgroundColor3 = Color3.fromRGB(37, 35, 38)
+BxKh7f4VET.BorderSizePixel = 0
+BxKh7f4VET.Size = UDim2.new(0, 450, 0, 19)
 
 Simple.Name = "lQs9PVa5lw"
-Simple.Parent = TopBar
+Simple.Parent = BxKh7f4VET
 Simple.BackgroundColor3 = Color3.new(1, 1, 1)
 Simple.AutoButtonColor = false
 Simple.BackgroundTransparency = 1
@@ -218,7 +218,7 @@ Simple.TextSize = 14
 Simple.TextXAlignment = Enum.TextXAlignment.Left
 
 CloseButton.Name = "CloseButton"
-CloseButton.Parent = TopBar
+CloseButton.Parent = BxKh7f4VET
 CloseButton.BackgroundColor3 = Color3.new(0.145098, 0.141176, 0.14902)
 CloseButton.BorderSizePixel = 0
 CloseButton.Position = UDim2.new(1, -19, 0, 0)
@@ -236,7 +236,7 @@ ImageLabel.Size = UDim2.new(0, 9, 0, 9)
 ImageLabel.Image = "http://www.roblox.com/asset/?id=5597086202"
 
 MaximizeButton.Name = "MaximizeButton"
-MaximizeButton.Parent = TopBar
+MaximizeButton.Parent = BxKh7f4VET
 MaximizeButton.BackgroundColor3 = Color3.new(0.145098, 0.141176, 0.14902)
 MaximizeButton.BorderSizePixel = 0
 MaximizeButton.Position = UDim2.new(1, -38, 0, 0)
@@ -254,7 +254,7 @@ ImageLabel_2.Size = UDim2.new(0, 9, 0, 9)
 ImageLabel_2.Image = "http://www.roblox.com/asset/?id=5597108117"
 
 MinimizeButton.Name = "MinimizeButton"
-MinimizeButton.Parent = TopBar
+MinimizeButton.Parent = BxKh7f4VET
 MinimizeButton.BackgroundColor3 = Color3.new(0.145098, 0.141176, 0.14902)
 MinimizeButton.BorderSizePixel = 0
 MinimizeButton.Position = UDim2.new(1, -57, 0, 0)
@@ -648,14 +648,14 @@ function onBarInput(input)
 				if
 					(currentX < 0 and currentX < currentPos.X)
 					or (
-						currentX > (viewportSize.X - (sideClosed and 131 or TopBar.AbsoluteSize.X))
+						currentX > (viewportSize.X - (sideClosed and 131 or BxKh7f4VET.AbsoluteSize.X))
 						and currentX > currentPos.X
 					)
 				then
 					if currentX < 0 then
 						currentX = 0
 					else
-						currentX = viewportSize.X - (sideClosed and 131 or TopBar.AbsoluteSize.X)
+						currentX = viewportSize.X - (sideClosed and 131 or BxKh7f4VET.AbsoluteSize.X)
 					end
 				end
 				if
@@ -858,13 +858,13 @@ function isInResizeRange(p)
 	local relativeP = p - RzshveFnW4.AbsolutePosition
 	local range = 5
 	if
-		relativeP.X >= TopBar.AbsoluteSize.X - range
+		relativeP.X >= BxKh7f4VET.AbsoluteSize.X - range
 		and relativeP.Y >= RzshveFnW4.AbsoluteSize.Y - range
-		and relativeP.X <= TopBar.AbsoluteSize.X
+		and relativeP.X <= BxKh7f4VET.AbsoluteSize.X
 		and relativeP.Y <= RzshveFnW4.AbsoluteSize.Y
 	then
 		return true, "B"
-	elseif relativeP.X >= TopBar.AbsoluteSize.X - range and relativeP.X <= RzshveFnW4.AbsoluteSize.X then
+	elseif relativeP.X >= BxKh7f4VET.AbsoluteSize.X - range and relativeP.X <= RzshveFnW4.AbsoluteSize.X then
 		return true, "X"
 	elseif relativeP.Y >= RzshveFnW4.AbsoluteSize.Y - range and relativeP.Y <= RzshveFnW4.AbsoluteSize.Y then
 		return true, "Y"
@@ -877,9 +877,9 @@ end
 function isInDragRange(p)
 	local relativeP = p - RzshveFnW4.AbsolutePosition
 	if
-		relativeP.X <= TopBar.AbsoluteSize.X - CloseButton.AbsoluteSize.X * 3
+		relativeP.X <= BxKh7f4VET.AbsoluteSize.X - CloseButton.AbsoluteSize.X * 3
 		and relativeP.X >= 0
-		and relativeP.Y <= TopBar.AbsoluteSize.Y
+		and relativeP.Y <= BxKh7f4VET.AbsoluteSize.Y
 		and relativeP.Y >= 0
 	then
 		return true
@@ -932,8 +932,8 @@ function mouseMoved()
 	local mousePos = UserInputService:GetMouseLocation() - Vector2.new(0, 36)
 	if
 		not closed
-		and mousePos.X >= TopBar.AbsolutePosition.X
-		and mousePos.X <= TopBar.AbsolutePosition.X + TopBar.AbsoluteSize.X
+		and mousePos.X >= BxKh7f4VET.AbsolutePosition.X
+		and mousePos.X <= BxKh7f4VET.AbsolutePosition.X + BxKh7f4VET.AbsoluteSize.X
 		and mousePos.Y >= RzshveFnW4.AbsolutePosition.Y
 		and mousePos.Y <= RzshveFnW4.AbsolutePosition.Y + RzshveFnW4.AbsoluteSize.Y
 	then
@@ -955,35 +955,35 @@ function maximizeSize(speed)
 		:Create(
 			MvHiwxqHWq,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(MvHiwxqHWq.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(MvHiwxqHWq.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - BxKh7f4VET.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
 		:Create(EhfF0Ej8Yj, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(
 				RzshveFnW4.AbsoluteSize.X - MvHiwxqHWq.AbsoluteSize.X,
-				RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y
+				RzshveFnW4.AbsoluteSize.Y - BxKh7f4VET.AbsoluteSize.Y
 			),
 		})
 		:Play()
 	TweenService
 		:Create(
-			TopBar,
+			BxKh7f4VET,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(RzshveFnW4.AbsoluteSize.X, TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(RzshveFnW4.AbsoluteSize.X, BxKh7f4VET.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
 		:Create(biPTz2neKL, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(RzshveFnW4.AbsoluteSize.X - MvHiwxqHWq.AbsoluteSize.X, 110),
-			Position = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y),
+			Position = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - BxKh7f4VET.AbsoluteSize.Y),
 		})
 		:Play()
 	TweenService
 		:Create(UfnCtByVMn, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(
 				RzshveFnW4.AbsoluteSize.X - MvHiwxqHWq.AbsoluteSize.X,
-				RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y
+				RzshveFnW4.AbsoluteSize.Y - 119 - BxKh7f4VET.AbsoluteSize.Y
 			),
 		})
 		:Play()
@@ -991,7 +991,7 @@ function maximizeSize(speed)
 		:Create(
 			QiyVbDCBiK,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(QiyVbDCBiK.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y - 18) }
+			{ Size = UDim2.fromOffset(QiyVbDCBiK.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - BxKh7f4VET.AbsoluteSize.Y - 18) }
 		)
 		:Play()
 end
@@ -1005,41 +1005,41 @@ function minimizeSize(speed)
 		:Create(
 			MvHiwxqHWq,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(MvHiwxqHWq.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(MvHiwxqHWq.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - BxKh7f4VET.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
 		:Create(
 			EhfF0Ej8Yj,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - BxKh7f4VET.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
 		:Create(
-			TopBar,
+			BxKh7f4VET,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(MvHiwxqHWq.AbsoluteSize.X, TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(MvHiwxqHWq.AbsoluteSize.X, BxKh7f4VET.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
 		:Create(biPTz2neKL, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(0, 119),
-			Position = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y),
+			Position = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - BxKh7f4VET.AbsoluteSize.Y),
 		})
 		:Play()
 	TweenService
 		:Create(
 			UfnCtByVMn,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - BxKh7f4VET.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
 		:Create(
 			QiyVbDCBiK,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(QiyVbDCBiK.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y - 18) }
+			{ Size = UDim2.fromOffset(QiyVbDCBiK.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - BxKh7f4VET.AbsoluteSize.Y - 18) }
 		)
 		:Play()
 end
