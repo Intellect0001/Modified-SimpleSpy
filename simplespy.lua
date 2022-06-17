@@ -36,9 +36,9 @@ local CNKzJFyilr = Instance.new("TextLabel")
 local smI7j8Ax0J = Instance.new("TextButton")
 local EhfF0Ej8Yj = Instance.new("Frame")
 local UfnCtByVMn = Instance.new("Frame")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local UIGridLayout = Instance.new("UIGridLayout")
-local FunctionTemplate = Instance.new("Frame")
+local biPTz2neKL = Instance.new("ScrollingFrame")
+local vvFSVfIdjt = Instance.new("UIGridLayout")
+local Mp3ZSXZrWU = Instance.new("Frame")
 local ColorBar_2 = Instance.new("Frame") -- breaks if trying to edit
 local Text_2 = Instance.new("TextLabel")
 local Button_2 = Instance.new("TextButton")
@@ -141,29 +141,29 @@ UfnCtByVMn.BackgroundColor3 = Color3.new(0.0823529, 0.0745098, 0.0784314)
 UfnCtByVMn.BorderSizePixel = 0
 UfnCtByVMn.Size = UDim2.new(0, 319, 0, 119)
 
-ScrollingFrame.Parent = EhfF0Ej8Yj
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.new(1, 1, 1)
-ScrollingFrame.BackgroundTransparency = 1
-ScrollingFrame.Position = UDim2.new(0, 0, 0.5, 0)
-ScrollingFrame.Size = UDim2.new(1, 0, 0.5, -9)
-ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
-ScrollingFrame.ScrollBarThickness = 4
+biPTz2neKL.Parent = EhfF0Ej8Yj
+biPTz2neKL.Active = true
+biPTz2neKL.BackgroundColor3 = Color3.new(1, 1, 1)
+biPTz2neKL.BackgroundTransparency = 1
+biPTz2neKL.Position = UDim2.new(0, 0, 0.5, 0)
+biPTz2neKL.Size = UDim2.new(1, 0, 0.5, -9)
+biPTz2neKL.CanvasSize = UDim2.new(0, 0, 0, 0)
+biPTz2neKL.ScrollBarThickness = 4
 
-UIGridLayout.Parent = ScrollingFrame
-UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIGridLayout.CellPadding = UDim2.new(0, 0, 0, 0)
-UIGridLayout.CellSize = UDim2.new(0, 94, 0, 27)
+vvFSVfIdjt.Parent = biPTz2neKL
+vvFSVfIdjt.HorizontalAlignment = Enum.HorizontalAlignment.Center
+vvFSVfIdjt.SortOrder = Enum.SortOrder.LayoutOrder
+vvFSVfIdjt.CellPadding = UDim2.new(0, 0, 0, 0)
+vvFSVfIdjt.CellSize = UDim2.new(0, 94, 0, 27)
 
-FunctionTemplate.Name = "FunctionTemplate"
-FunctionTemplate.Parent = ScrollingFrame
-FunctionTemplate.BackgroundColor3 = Color3.new(1, 1, 1)
-FunctionTemplate.BackgroundTransparency = 1
-FunctionTemplate.Size = UDim2.new(0, 117, 0, 23)
+Mp3ZSXZrWU.Name = "hQ2Gaqo9Ha"
+Mp3ZSXZrWU.Parent = biPTz2neKL
+Mp3ZSXZrWU.BackgroundColor3 = Color3.new(1, 1, 1)
+Mp3ZSXZrWU.BackgroundTransparency = 1
+Mp3ZSXZrWU.Size = UDim2.new(0, 117, 0, 23)
 
 ColorBar_2.Name = "ColorBar"
-ColorBar_2.Parent = FunctionTemplate
+ColorBar_2.Parent = Mp3ZSXZrWU
 ColorBar_2.BackgroundColor3 = Color3.new(1, 1, 1)
 ColorBar_2.BorderSizePixel = 0
 ColorBar_2.Position = UDim2.new(0, 7, 0, 10)
@@ -171,7 +171,7 @@ ColorBar_2.Size = UDim2.new(0, 7, 0, 18)
 ColorBar_2.ZIndex = 3
 
 Text_2.Name = "Text"
-Text_2.Parent = FunctionTemplate
+Text_2.Parent = Mp3ZSXZrWU
 Text_2.BackgroundColor3 = Color3.new(1, 1, 1)
 Text_2.BackgroundTransparency = 1
 Text_2.Position = UDim2.new(0, 19, 0, 10)
@@ -186,7 +186,7 @@ Text_2.TextXAlignment = Enum.TextXAlignment.Left
 Text_2.TextWrapped = true
 
 Button_2.Name = "Button"
-Button_2.Parent = FunctionTemplate
+Button_2.Parent = Mp3ZSXZrWU
 Button_2.BackgroundColor3 = Color3.new(0, 0, 0)
 Button_2.BackgroundTransparency = 0.69999998807907
 Button_2.BorderColor3 = Color3.new(1, 1, 1)
@@ -974,7 +974,7 @@ function maximizeSize(speed)
 		)
 		:Play()
 	TweenService
-		:Create(ScrollingFrame, TweenInfo.new(speed), {
+		:Create(biPTz2neKL, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(RzshveFnW4.AbsoluteSize.X - MvHiwxqHWq.AbsoluteSize.X, 110),
 			Position = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y),
 		})
@@ -1023,7 +1023,7 @@ function minimizeSize(speed)
 		)
 		:Play()
 	TweenService
-		:Create(ScrollingFrame, TweenInfo.new(speed), {
+		:Create(biPTz2neKL, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(0, 119),
 			Position = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y),
 		})
@@ -1149,7 +1149,7 @@ end
 
 --- Updates the canvas size to fit the current amount of function buttons
 function updateFunctionCanvas()
-	ScrollingFrame.CanvasSize = UDim2.fromOffset(UIGridLayout.AbsoluteContentSize.X, UIGridLayout.AbsoluteContentSize.Y)
+	biPTz2neKL.CanvasSize = UDim2.fromOffset(vvFSVfIdjt.AbsoluteContentSize.X, vvFSVfIdjt.AbsoluteContentSize.Y)
 end
 
 --- Updates the canvas size to fit the amount of current remotes
@@ -1205,7 +1205,7 @@ end
 ---@param description function
 ---@param onClick function
 function newButton(name, description, onClick)
-	local button = FunctionTemplate:Clone()
+	local button = Mp3ZSXZrWU:Clone()
 	button.Text.Text = name
 	button.Button.MouseEnter:Connect(function()
 		makeToolTip(true, description())
@@ -1219,7 +1219,7 @@ function newButton(name, description, onClick)
 	button.Button.MouseButton1Click:Connect(function(...)
 		onClick(button, ...)
 	end)
-	button.Parent = ScrollingFrame
+	button.Parent = biPTz2neKL
 	updateFunctionCanvas()
 end
 
@@ -2276,7 +2276,7 @@ if not _G.SimpleSpyExecuted then
 		-- if gethui then funcEnabled = false end
 		onToggleButtonClick()
 		bmC9bQhv7M.Parent = nil
-		FunctionTemplate.Parent = nil
+		Mp3ZSXZrWU.Parent = nil
 		codebox = Highlight.new(UfnCtByVMn)
 		codebox:setRaw("")
 		getgenv().SimpleSpy = SimpleSpy
