@@ -26,7 +26,7 @@ local Highlight =
 -- Instances:
 
 local SRKsY0xZ9r = Instance.new("ScreenGui")
-local Background = Instance.new("Frame")
+local RzshveFnW4 = Instance.new("Frame")
 local LeftPanel = Instance.new("Frame")
 local LogList = Instance.new("ScrollingFrame")
 local UIListLayout = Instance.new("UIListLayout")
@@ -58,15 +58,15 @@ local TextLabel = Instance.new("TextLabel")
 SRKsY0xZ9r.Name = "BgviNsLBaL"
 SRKsY0xZ9r.ResetOnSpawn = false
 
-Background.Name = "Background"
-Background.Parent = SRKsY0xZ9r
-Background.BackgroundColor3 = Color3.new(1, 1, 1)
-Background.BackgroundTransparency = 1
-Background.Position = UDim2.new(0, 500, 0, 200)
-Background.Size = UDim2.new(0, 450, 0, 268)
+RzshveFnW4.Name = "DJV6iHk9gC"
+RzshveFnW4.Parent = SRKsY0xZ9r
+RzshveFnW4.BackgroundColor3 = Color3.new(1, 1, 1)
+RzshveFnW4.BackgroundTransparency = 1
+RzshveFnW4.Position = UDim2.new(0, 500, 0, 200)
+RzshveFnW4.Size = UDim2.new(0, 450, 0, 268)
 
 LeftPanel.Name = "LeftPanel"
-LeftPanel.Parent = Background
+LeftPanel.Parent = RzshveFnW4
 LeftPanel.BackgroundColor3 = Color3.fromRGB(53, 52, 55)
 LeftPanel.BorderSizePixel = 0
 LeftPanel.Position = UDim2.new(0, 0, 0, 19)
@@ -129,7 +129,7 @@ Button.TextColor3 = Color3.new(0, 0, 0)
 Button.TextSize = 14
 
 RightPanel.Name = "RightPanel"
-RightPanel.Parent = Background
+RightPanel.Parent = RzshveFnW4
 RightPanel.BackgroundColor3 = Color3.fromRGB(37, 36, 38)
 RightPanel.BorderSizePixel = 0
 RightPanel.Position = UDim2.new(0, 131, 0, 19)
@@ -199,7 +199,7 @@ Button_2.TextColor3 = Color3.new(0, 0, 0)
 Button_2.TextSize = 14
 
 TopBar.Name = "TopBar"
-TopBar.Parent = Background
+TopBar.Parent = RzshveFnW4
 TopBar.BackgroundColor3 = Color3.fromRGB(37, 35, 38)
 TopBar.BorderSizePixel = 0
 TopBar.Size = UDim2.new(0, 450, 0, 19)
@@ -606,26 +606,26 @@ function bringBackOnResize()
 	else
 		maximizeSize()
 	end
-	local currentX = Background.AbsolutePosition.X
-	local currentY = Background.AbsolutePosition.Y
+	local currentX = RzshveFnW4.AbsolutePosition.X
+	local currentY = RzshveFnW4.AbsolutePosition.Y
 	local viewportSize = workspace.CurrentCamera.ViewportSize
-	if (currentX < 0) or (currentX > (viewportSize.X - (sideClosed and 131 or Background.AbsoluteSize.X))) then
+	if (currentX < 0) or (currentX > (viewportSize.X - (sideClosed and 131 or RzshveFnW4.AbsoluteSize.X))) then
 		if currentX < 0 then
 			currentX = 0
 		else
-			currentX = viewportSize.X - (sideClosed and 131 or Background.AbsoluteSize.X)
+			currentX = viewportSize.X - (sideClosed and 131 or RzshveFnW4.AbsoluteSize.X)
 		end
 	end
-	if (currentY < 0) or (currentY > (viewportSize.Y - (closed and 19 or Background.AbsoluteSize.Y) - 36)) then
+	if (currentY < 0) or (currentY > (viewportSize.Y - (closed and 19 or RzshveFnW4.AbsoluteSize.Y) - 36)) then
 		if currentY < 0 then
 			currentY = 0
 		else
-			currentY = viewportSize.Y - (closed and 19 or Background.AbsoluteSize.Y) - 36
+			currentY = viewportSize.Y - (closed and 19 or RzshveFnW4.AbsoluteSize.Y) - 36
 		end
 	end
 	TweenService.Create(
 		TweenService,
-		Background,
+		RzshveFnW4,
 		TweenInfo.new(0.1),
 		{ Position = UDim2.new(0, currentX, 0, currentY) }
 	):Play()
@@ -636,7 +636,7 @@ end
 function onBarInput(input)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 then
 		local lastPos = UserInputService.GetMouseLocation(UserInputService)
-		local mainPos = Background.AbsolutePosition
+		local mainPos = RzshveFnW4.AbsolutePosition
 		local offset = mainPos - lastPos
 		local currentPos = offset + lastPos
 		RunService.BindToRenderStep(RunService, "drag", 1, function()
@@ -661,21 +661,21 @@ function onBarInput(input)
 				if
 					(currentY < 0 and currentY < currentPos.Y)
 					or (
-						currentY > (viewportSize.Y - (closed and 19 or Background.AbsoluteSize.Y) - 36)
+						currentY > (viewportSize.Y - (closed and 19 or RzshveFnW4.AbsoluteSize.Y) - 36)
 						and currentY > currentPos.Y
 					)
 				then
 					if currentY < 0 then
 						currentY = 0
 					else
-						currentY = viewportSize.Y - (closed and 19 or Background.AbsoluteSize.Y) - 36
+						currentY = viewportSize.Y - (closed and 19 or RzshveFnW4.AbsoluteSize.Y) - 36
 					end
 				end
 				currentPos = Vector2.new(currentX, currentY)
 				lastPos = newPos
 				TweenService.Create(
 					TweenService,
-					Background,
+					RzshveFnW4,
 					TweenInfo.new(0.1),
 					{ Position = UDim2.new(0, currentPos.X, 0, currentPos.Y) }
 				):Play()
@@ -855,18 +855,18 @@ end
 --- Checks if cursor is within resize range
 --- @param p Vector2
 function isInResizeRange(p)
-	local relativeP = p - Background.AbsolutePosition
+	local relativeP = p - RzshveFnW4.AbsolutePosition
 	local range = 5
 	if
 		relativeP.X >= TopBar.AbsoluteSize.X - range
-		and relativeP.Y >= Background.AbsoluteSize.Y - range
+		and relativeP.Y >= RzshveFnW4.AbsoluteSize.Y - range
 		and relativeP.X <= TopBar.AbsoluteSize.X
-		and relativeP.Y <= Background.AbsoluteSize.Y
+		and relativeP.Y <= RzshveFnW4.AbsoluteSize.Y
 	then
 		return true, "B"
-	elseif relativeP.X >= TopBar.AbsoluteSize.X - range and relativeP.X <= Background.AbsoluteSize.X then
+	elseif relativeP.X >= TopBar.AbsoluteSize.X - range and relativeP.X <= RzshveFnW4.AbsoluteSize.X then
 		return true, "X"
-	elseif relativeP.Y >= Background.AbsoluteSize.Y - range and relativeP.Y <= Background.AbsoluteSize.Y then
+	elseif relativeP.Y >= RzshveFnW4.AbsoluteSize.Y - range and relativeP.Y <= RzshveFnW4.AbsoluteSize.Y then
 		return true, "Y"
 	end
 	return false
@@ -875,7 +875,7 @@ end
 --- Checks if cursor is within dragging range
 --- @param p Vector2
 function isInDragRange(p)
-	local relativeP = p - Background.AbsolutePosition
+	local relativeP = p - RzshveFnW4.AbsolutePosition
 	if
 		relativeP.X <= TopBar.AbsoluteSize.X - CloseButton.AbsoluteSize.X * 3
 		and relativeP.X >= 0
@@ -934,8 +934,8 @@ function mouseMoved()
 		not closed
 		and mousePos.X >= TopBar.AbsolutePosition.X
 		and mousePos.X <= TopBar.AbsolutePosition.X + TopBar.AbsoluteSize.X
-		and mousePos.Y >= Background.AbsolutePosition.Y
-		and mousePos.Y <= Background.AbsolutePosition.Y + Background.AbsoluteSize.Y
+		and mousePos.Y >= RzshveFnW4.AbsolutePosition.Y
+		and mousePos.Y <= RzshveFnW4.AbsolutePosition.Y + RzshveFnW4.AbsoluteSize.Y
 	then
 		if not mouseInGui then
 			mouseInGui = true
@@ -955,14 +955,14 @@ function maximizeSize(speed)
 		:Create(
 			LeftPanel,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(LeftPanel.AbsoluteSize.X, Background.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(LeftPanel.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
 		:Create(RightPanel, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(
-				Background.AbsoluteSize.X - LeftPanel.AbsoluteSize.X,
-				Background.AbsoluteSize.Y - TopBar.AbsoluteSize.Y
+				RzshveFnW4.AbsoluteSize.X - LeftPanel.AbsoluteSize.X,
+				RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y
 			),
 		})
 		:Play()
@@ -970,20 +970,20 @@ function maximizeSize(speed)
 		:Create(
 			TopBar,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(Background.AbsoluteSize.X, TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(RzshveFnW4.AbsoluteSize.X, TopBar.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
 		:Create(ScrollingFrame, TweenInfo.new(speed), {
-			Size = UDim2.fromOffset(Background.AbsoluteSize.X - LeftPanel.AbsoluteSize.X, 110),
-			Position = UDim2.fromOffset(0, Background.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y),
+			Size = UDim2.fromOffset(RzshveFnW4.AbsoluteSize.X - LeftPanel.AbsoluteSize.X, 110),
+			Position = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y),
 		})
 		:Play()
 	TweenService
 		:Create(CodeBox, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(
-				Background.AbsoluteSize.X - LeftPanel.AbsoluteSize.X,
-				Background.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y
+				RzshveFnW4.AbsoluteSize.X - LeftPanel.AbsoluteSize.X,
+				RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y
 			),
 		})
 		:Play()
@@ -991,7 +991,7 @@ function maximizeSize(speed)
 		:Create(
 			LogList,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(LogList.AbsoluteSize.X, Background.AbsoluteSize.Y - TopBar.AbsoluteSize.Y - 18) }
+			{ Size = UDim2.fromOffset(LogList.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y - 18) }
 		)
 		:Play()
 end
@@ -1005,14 +1005,14 @@ function minimizeSize(speed)
 		:Create(
 			LeftPanel,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(LeftPanel.AbsoluteSize.X, Background.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(LeftPanel.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
 		:Create(
 			RightPanel,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(0, Background.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
@@ -1025,43 +1025,43 @@ function minimizeSize(speed)
 	TweenService
 		:Create(ScrollingFrame, TweenInfo.new(speed), {
 			Size = UDim2.fromOffset(0, 119),
-			Position = UDim2.fromOffset(0, Background.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y),
+			Position = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y),
 		})
 		:Play()
 	TweenService
 		:Create(
 			CodeBox,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(0, Background.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y) }
+			{ Size = UDim2.fromOffset(0, RzshveFnW4.AbsoluteSize.Y - 119 - TopBar.AbsoluteSize.Y) }
 		)
 		:Play()
 	TweenService
 		:Create(
 			LogList,
 			TweenInfo.new(speed),
-			{ Size = UDim2.fromOffset(LogList.AbsoluteSize.X, Background.AbsoluteSize.Y - TopBar.AbsoluteSize.Y - 18) }
+			{ Size = UDim2.fromOffset(LogList.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y - TopBar.AbsoluteSize.Y - 18) }
 		)
 		:Play()
 end
 
 --- Ensures size is within screensize limitations
 function validateSize()
-	local x, y = Background.AbsoluteSize.X, Background.AbsoluteSize.Y
+	local x, y = RzshveFnW4.AbsoluteSize.X, RzshveFnW4.AbsoluteSize.Y
 	local screenSize = workspace.CurrentCamera.ViewportSize
-	if x + Background.AbsolutePosition.X > screenSize.X then
-		if screenSize.X - Background.AbsolutePosition.X >= 450 then
-			x = screenSize.X - Background.AbsolutePosition.X
+	if x + RzshveFnW4.AbsolutePosition.X > screenSize.X then
+		if screenSize.X - RzshveFnW4.AbsolutePosition.X >= 450 then
+			x = screenSize.X - RzshveFnW4.AbsolutePosition.X
 		else
 			x = 450
 		end
-	elseif y + Background.AbsolutePosition.Y > screenSize.Y then
-		if screenSize.X - Background.AbsolutePosition.Y >= 268 then
-			y = screenSize.Y - Background.AbsolutePosition.Y
+	elseif y + RzshveFnW4.AbsolutePosition.Y > screenSize.Y then
+		if screenSize.X - RzshveFnW4.AbsolutePosition.Y >= 268 then
+			y = screenSize.Y - RzshveFnW4.AbsolutePosition.Y
 		else
 			y = 268
 		end
 	end
-	Background.Size = UDim2.fromOffset(x, y)
+	RzshveFnW4.Size = UDim2.fromOffset(x, y)
 end
 
 --- Called on user input while mouse in 'Background' frame
@@ -1071,7 +1071,7 @@ function backgroundUserInput(input)
 	local inResizeRange, type = isInResizeRange(mousePos)
 	if input.UserInputType == Enum.UserInputType.MouseButton1 and inResizeRange then
 		local lastPos = UserInputService:GetMouseLocation()
-		local offset = Background.AbsoluteSize - lastPos
+		local offset = RzshveFnW4.AbsoluteSize - lastPos
 		local currentPos = lastPos + offset
 		RunService:BindToRenderStep("SIMPLESPY_RESIZE", 1, function()
 			local newPos = UserInputService:GetMouseLocation()
@@ -1085,12 +1085,12 @@ function backgroundUserInput(input)
 					currentY = 268
 				end
 				currentPos = Vector2.new(currentX, currentY)
-				Background.Size = UDim2.fromOffset(
+				RzshveFnW4.Size = UDim2.fromOffset(
 					(not sideClosed and not closed and (type == "X" or type == "B")) and currentPos.X
-						or Background.AbsoluteSize.X,
+						or RzshveFnW4.AbsoluteSize.X,
 					(--[[(not sideClosed or currentPos.X <= LeftPanel.AbsolutePosition.X + LeftPanel.AbsoluteSize.X) and]]not closed and (type == "Y" or type == "B"))
 							and currentPos.Y
-						or Background.AbsoluteSize.Y
+						or RzshveFnW4.AbsoluteSize.Y
 				)
 				validateSize()
 				if sideClosed then
